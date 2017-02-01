@@ -53,6 +53,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'crmapp.marketing'
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
