@@ -42,12 +42,18 @@ SECRET_KEY = get_env_variable("SECRET_KEY")
 DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 CRMEASY_DB_PASS = False
+
 if ENV_ROLE == 'development':
     DEBUG = True
     TEMPLATE_DEBUG = DEBUG
     CRMEASY_DB_PASS = get_env_variable('CRMEASY_DB_PASS')
 
-ALLOWED_HOSTS = []
+elif ENV_ROLE == 'production':
+    import dj_database_url
+    DATABASES['default'] = dj_database_url.config()
+
+
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
