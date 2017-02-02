@@ -6,3 +6,9 @@ venv/
 crm_app/crm_app/urls.pyc
 crm_app/crm_app/wsgi.pyc
 
+crm_app/marketing/__init__.pyc
+crm_app/marketing/admin.pyc
+crm_app/marketing/migrations/__init__.pyc
+crm_app/marketing/models.pyc
+crm_app/marketing/urls.pyc
+crm_app/marketing/views.pyc
