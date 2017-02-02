@@ -48,10 +48,6 @@ if ENV_ROLE == 'development':
     TEMPLATE_DEBUG = DEBUG
     CRMEASY_DB_PASS = get_env_variable('CRMEASY_DB_PASS')
 
-elif ENV_ROLE == 'production':
-    import dj_database_url
-    DATABASES['default'] = dj_database_url.config()
-
 
 ALLOWED_HOSTS = ['*']
 
@@ -172,3 +168,7 @@ TEMPLATE_CONTEXT_PROCESSORS = [
     "django.contrib.messages.context_processors.messages",
     'django.core.context_processors.request',
 ]
+
+if ENV_ROLE == 'production':
+    import dj_database_url
+    DATABASES['default'] = dj_database_url.config()
