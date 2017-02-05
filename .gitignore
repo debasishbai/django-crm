@@ -12,3 +12,10 @@ crm_app/marketing/migrations/__init__.pyc
 crm_app/marketing/models.pyc
 crm_app/marketing/urls.pyc
 crm_app/marketing/views.pyc
+
+
+crm_app/subscribers/__init__.pyc
+crm_app/subscribers/admin.pyc
+crm_app/subscribers/migrations/__init__.pyc
+crm_app/subscribers/models.pyc
+
